@@ -1,0 +1,223 @@
+# Listing of current Pangeo deployments
+- name: NCAR Cheyenne Cluster
+  description: Large HPC cluster (5.34-petaflops) running at the National Center for Atmospheric Research
+  link: https://www2.cisl.ucar.edu/resources/computational-systems/cheyenne
+  platform: HPC
+  dask: dask-jobqueue and dask-mpi
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: hub.pangeo.io
+  description: Flagship Pangeo JupyterHub server for scalable interactive data analysis running on Google Cloud Platform
+  link: https://hub.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Need a github account part of the Pangeo organization with affiliaton set to public
+  kind: pangeo_cloud
+
+- name: example.pangeo.io
+  description: Pangeo demo and model for domain specific deployments
+  link: https://example.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Need a github account part of the Pangeo organization with affiliaton set to public
+  kind: pangeo_cloud
+
+- name: staging.pangeo.io
+  description: Validation and integration environment for Pangeo platform
+  link: https://staging.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Used by Pangeo core developers, need a github account and specific authorization
+  kind: pangeo_cloud
+
+- name: dev.pangeo.io
+  description: Develoment environment for Pangeo platform, highly unstable
+  link: https://dev.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Used by Pangeo core developers, need a github account and specific authorization
+  kind: pangeo_cloud
+
+- name: pangeo.pydata.org
+  description: Former flagship Pangeo JupyterHub server for scalable interactive data analysis running on Google Cloud Platform
+  link: http://pangeo.pydata.org
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Soon being closed
+  kind: pangeo_cloud
+
+- name: binder.pangeo.io
+  description: Flagship Pangeo BinderHub deployment running on Google Cloud Platform
+  link: http://binder.pangeo.io/
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: BinderHub
+  access: Anyone, look at http://binder.pangeo.io/v2/gh/pangeo-data/pangeo-example-notebooks/master
+  kind: pangeo_cloud
+
+- name: staging.binder.pangeo.io
+  description: Developement and integration Pangeo BinderHub deployment running on Google Cloud Platform
+  link: http://binder.pangeo.io/
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: BinderHub
+  access: Used by Pangeo core developers
+  kind: pangeo_cloud
+
+- name: atmos.pangeo.io
+  description: Pangeo platform for developing atmospheric use cases
+  link: http://atmos.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Ask @charlesbluca and @biasuttimic on https://github.com/pangeo-data/atmos.pangeo.io-deploy/
+  kind: domain_cloud
+
+- name: hydroshare.pangeo.io
+  description: Pangeo platform for developing hydrologic use cases
+  link: http://hydroshare.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Ask @jhamman or @bartnijssen
+  kind: domain_cloud
+
+- name: polar.pangeo.io
+  description: Pangeo platform for developing polar use cases
+  link: http://polar.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Ask @NicWayand on https://github.com/NicWayand/polar.pangeo.io-deploy
+  kind: domain_cloud
+
+- name: astro.pangeo.io
+  description: Pangeo platform for developing astronomic use cases
+  link: http://astro.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Ask @SimonKrughoff and @wtbarnes on https://github.com/pangeo-data/astro.pangeo.io-deploy
+  kind: domain_cloud
+
+- name: ocean.pangeo.io
+  description: Pangeo platform for developing ocean use cases
+  link: http://ocean.pangeo.io
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  access: Ask @raphaeldussin on https://github.com/raphaeldussin/example.pangeo.io-deploy
+  kind: domain_cloud
+
+- name: NASA Pleiades Cluster
+  description: Large HPC cluster (7.24-petaflops) running at the NASA High-End Computing Capability Project
+  link: https://www.nas.nasa.gov/hecc/resources/pleiades.html
+  platform: HPC
+  dask: dask-mpi with custom launch scripts
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Columbia Habanero Cluster
+  description: Research cluster at Columbia University
+  link: https://confluence.columbia.edu/confluence/display/rcs/Habanero+HPC+Cluster+User+Documentation?src=contextnavpagetreemode
+  platform: HPC
+  dask: dask-mpi with custom launch scripts
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Lamont Real-Time Earth Pangeo Cluster
+  description: JupyterHub server used Earth/ocean science research
+  platform: Microsoft Azure Cloud
+  dask: dask-kubernetes
+  jupyter: JupyterHub
+  kind: other_cloud
+
+- name: CNES HAL
+  description: CNES research and productioncluster
+  platform: HPC
+  dask: dask-jobqueue and dask-mpi
+  jupyter: Jupyterhub server on a VM connected to PBSPro
+  kind: hpc
+
+- name: USGS Yeti
+  description: USGS's Advanced Research Computing cluster
+  platform: HPC
+  dask: dask-jobqueue and custom launch scripts
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: RGH-Hub
+  description: JupyterHub server used for interactive data analysis by Rhodium Group staff for climate research and analysis
+  link: https://compute.rhg.com/hub/login
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: Jupyterhub
+  kind: other_cloud
+
+- name: Met Office Informatics Lab
+  description: A prototype cluster for the Met Office.
+  platform: Amazon Web Services
+  dask: dask-kubernetes
+  jupyter: Jupyterhub
+  kind: other_cloud
+
+- name: UW Hyak
+  description: The University of Washington's shared supercomputing cluster.
+  link: http://wiki.hyak.uw.edu/
+  platform: HPC
+  dask: dask-mpi and custom launch scripts
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: DOD HPC Systems at AFRL and ERDC
+  description: Unclassified Department of Defense High Performance Computing Modernization Program Supercomputing Clusters (Thunder, Topaz, Utility Servers, etc.)
+  link: https://centers.hpc.mil/index.html
+  platform: HPC
+  dask: dask-jobqueue, dask-mpi, and custom launch scripts
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Dask Tutorial Cluster
+  description: JupyterHub server used for dask tutorials
+  link: https://github.com/dask/dask-tutorial-infrastructure
+  platform: Google Cloud Platform
+  dask: dask-kubernetes
+  jupyter: Jupyterhub
+  kind: other_cloud
+
+- name: GFDL Post-processing and Analysis Cluster
+  description: HPC cluster running at the NOAA Geophyiscal Fluid Dynamics Laboratory
+  platform: HPC
+  dask: dask-jobqueue with a custom PBSCluster subclass
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Princeton Tiger Cluster
+  description: Research computing cluster running at Princeton University
+  link: https://researchcomputing.princeton.edu/systems-and-services/available-systems/tiger
+  platform: HPC
+  dask: dask-jobqueue
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Pawsey Supercomputing Centre
+  description: Western Australian Supercomputing Centre
+  link: https://www.pawsey.org.au/our-systems/
+  platform: HPC
+  dask: dask-jobqueue
+  jupyter: Single user notebook servers
+  kind: hpc
+
+- name: Pegasus Supercomputer
+  description: University of Miami Supercomputer
+  link: http://ccs.miami.edu/pegasus
+  platform: HPC
+  dask: dask-jobqueue
+  jupyter: Single user notebook servers
+  kind: hpc
